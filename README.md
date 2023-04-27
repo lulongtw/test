@@ -1,21 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> //1
 <html>
+    <meta charset = "UTF-8">
     <head>
-        <meta chareset="UTF-8">
-        <title>test</title>
-        <h1><strong>our BB pag is cutest!</strong></h1>
+        <title>bbpag</title>
+        <h1><strong>my precious bbpag</strong></h1>        
     </head>
     <body>
         <img src="https://raw.githubusercontent.com/lulongtw/test/90bfb7a8c5ce024fc072cd2e4a99675f59ac5503/S__27484184.jpg" alt="My test image">
-        <p>BBpag's advantages </p>
+        <h2>this is my lovely bbpag</h2>
+        <P>line</P>
         <ul>
-            <li>super pun!</li>
-            <li>super cute!</li>
-            <li><strong>super super pun!!</strong></li>
+            <li>1</li>
+            <li>2</li>
         </ul>
         <p></p>
-        <p></p>
-        <p>this is BBpag's good friend  <a href="https://raw.githubusercontent.com/lulongtw/test/90bfb7a8c5ce024fc072cd2e4a99675f59ac5503/S__27484182.jpg">JUJU</a>  bullied by BBpag everyday!</p>
+        <p>this is <a href="https://raw.githubusercontent.com/lulongtw/test/90bfb7a8c5ce024fc072cd2e4a99675f59ac5503/S__27484182.jpg">JUJU</a>  bullied by BBpag everyday!</p>
     </body>
 </html>
-
