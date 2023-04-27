@@ -2,7 +2,6 @@
 <html>
     <meta charset = "UTF-8">
     <head>
-        <title>bbpag</title>
         <h1><strong>my precious bbpag</strong></h1>        
     </head>
     <body>
