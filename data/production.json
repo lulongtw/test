@@ -5,10 +5,10 @@
   },
   {
     "name":"Pixel Chromebook",
-    "price":"12000",
+    "price":12000,
   },
   {
     "name":"Chromecast",
     "price":1440,
-  },
+  }
 ]
