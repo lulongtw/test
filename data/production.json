@@ -1,14 +1,20 @@
 [
   {
-    "name":"Google Pixel 3",
-    "price":27700,
+    "number":"p01",
+    "name":"Pixel 7",
+    "price":17700,
+    "description":"最新的 Pixel 手機。"
   },
   {
-    "name":"Pixel Chromebook",
-    "price":12000,
-  },
-  {
+    "number":"p02",
     "name":"Chromecast",
-    "price":1440,
+    "price":1500,
+    "description":"在大螢幕上播放喜歡的影片。"
+  },
+  {
+    "number":"p03",
+    "name":"Pixel Book",
+    "price":12000,
+    "description":"最新的 Chromebook 產品。"
   }
 ]
