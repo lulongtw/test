@@ -1,10 +1,10 @@
-{
-    "intr":"int",
-    "efrt":"efrt",
-    "tme":"tme",
-    "cmpy":"cmpy",
-    "md1":"md1",
-    "md2":"md2",
-    "thots":"thots",
-    "othr":"othr"
-}
+[
+    {"cont":"int"},
+    {"cont":"efrt"},
+    {"cont":"tme"},
+    {"cont":"cmpy"},
+    {"cont":"md1"},
+    {"cont":"md2"},
+    {"cont":"thots"},
+    {"cont":"othr"}
+]
