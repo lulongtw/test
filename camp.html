@@ -1,0 +1,116 @@
+<!DOCtype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0 , width=device-width">
+        <link rel="stylesheet" type="text/css" href="https://lulongtw.github.io/test/style/camp.css">
+        <title>forWeHelpCamp</title>
+    </head>
+    <body>
+        <div style="background-color:rgb(248, 225, 169);">
+        <div class="title">WeHelpCamp個人申請網頁</div>
+        <div class="background">
+
+            <div class="item">兩百字內的個人簡介<hr>
+            <div class="content" id="intro"></div></div>
+
+            <div class="item">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們<hr>
+            <div class="content" id="effort"></div>
+            <div class="butn" onmouseover="onov(this)" onmouseout="onou(this)"><a href="https://www.google.com.tw/" target="_blank">hitme</a></div></div>
+
+            <div class="item">如果參與這個計畫，會怎麼安排學習時間<hr>
+            <div class="content" id="time"></div></div>
+
+            <div class="item">是否有想要加入的軟體公司？為什麼想加入該公司<hr>
+            <div class="content" id="company"></div></div>
+
+            <div class="item">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒<hr>
+            <div class="content" id="mood"></div></div>
+
+            <div class="item">關於這份申請網頁，請分享一個你開發時的技術心得<hr>
+            <div class="content" id="thougths"></div></div>
+
+            <div class="item">其他想要對我們說的事情<hr>           
+                <div class="butn" onmouseover="onov(this)" onmouseout="onou(this)" onclick="minion()">選我</div>
+                <div class="content" id="others"></div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script>
+        let intr = document.querySelector("#intro")
+        let efrt = document.querySelector("#effort")
+        let tme = document.querySelector("#time")
+        let cmpy = document.querySelector("#company")
+        let md = document.querySelector("#mood")   
+        let thots = document.querySelector("#thougths")
+        let othr = document.querySelector("#others")
+        let lst = [intr,efrt,tme,cmpy,md,thots,othr]
+        
+        let i=0
+        let a = "選我"
+        let b = "choose me! "
+        let c = "拜託選我拉"
+        let d = "按那麼多下還不選我"
+        let f = "我要生氣了喔"
+        let g = "整排else if 內"
+        let h = "還以為是在寫ai"
+
+        function minion(){
+            i++
+            if (i<7){
+                othr.innerHTML+=a
+            }else if(i==7){
+                othr.innerHTML=b
+            }else if (i>7 && i < 12){                
+                othr.innerHTML+=b
+            }else if (i==12){
+                othr.innerHTML=c
+            }else if (i>12 && i<17){               
+                othr.innerHTML+=c
+            }else if (i==17){
+                othr.innerHTML=d
+            }else if (i>17 & i<21){               
+                othr.innerHTML+=d
+            }else if (i==21){
+                othr.innerHTML=f
+            }else if(i>21 && i<24){               
+                othr.innerHTML+=f
+            }else if (i==24){
+                othr.innerHTML=g
+            }else if (i>24 & i<28){
+                othr.innerHTML+=g
+            }else if (i==28){
+                othr.innerHTML=h
+            }else if (i>28 & i <32){
+                othr.innerHTML+=h
+            }else if (i==32){
+                othr.innerHTML="<div style='font-size:30px;text-align:center;font-weight:bold;line-height:50px;'>沒招了拉!!<br>選我拜託</div>"
+            }else{
+                othr.innerHTML=a
+                i=0
+            }           
+        }
+        
+        function onov(x){
+            x.className="msover"
+        }
+        function onou(x){
+            x.className="msout"
+        }
+
+        fetch("https://lulongtw.github.io/test/data/ans.json")   
+        .then(function(response){
+            return response.json()
+            .then(function(data){
+                for(let n=0;n<data.length;n++){      
+                    if(data[n].cont.includes("＠")){
+                        let z = data[n].cont.split("＠")    
+                        for(let i=0;i<z.length;i++){
+                            lst[n].innerHTML+=z[i]+"<br>"}
+                    }else{lst[n].innerHTML=data[n].cont}
+                }              
+            })
+        })
+    </script>
+</html>
