@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0 , width=device-width">
-        <link rel="stylesheet" type="text/css" href="https://lulongtw.github.io/test/style/camp.css">
+        <link rel="stylesheet" type="text/css" href="/https://lulongtw.github.io/test/style/camp.css">
         <title>forWeHelpCamp</title>
     </head>
     <body>
-        <div style="background-color:rgb(248, 225, 169);">
+        <div style="background-color:#d7b382;;">
         <div class="title">WeHelpCamp個人申請網頁</div>
         <div class="background">
 
@@ -33,10 +33,10 @@
             <div class="item">關於這份申請網頁，請分享一個你開發時的技術心得<hr>
             <div class="content" id="thougths"></div></div>
 
-            <div class="item">其他想要對我們說的事情<hr>           
-                <div class="butn" onmouseover="onov(this)" onmouseout="onou(this)" onclick="minion()">選我</div>
-                <div class="content" id="others"></div>
-                <br><br><br><br><br><br>
+            <div class="item">其他想要對我們說的事情<span style="text-align:right;font-size:3px;color:#c28549;margin-left:50px">按一下</span><hr>           
+                <div id="chme" class="butn" style="margin:0 auto" onmouseover="onov(this);chng(this)" onmouseout="onou(this)" onclick="minion()">選我</div>
+                <div class="content1" id="others"></div>
+                <br><br><br><br>
             </div>
         </div>
         </div>
@@ -49,6 +49,7 @@
         let md = document.querySelector("#mood")   
         let thots = document.querySelector("#thougths")
         let othr = document.querySelector("#others")
+        let chsme = document.querySelector("#chme")
         let lst = [intr,efrt,tme,cmpy,md,thots,othr]
         
         let i=0
@@ -59,6 +60,10 @@
         let f = "我要生氣了喔"
         let g = "整排else if 內"
         let h = "還以為是在寫ai"
+
+        function chng(){
+            chsme.innerHTML="按我"
+        }
 
         function minion(){
             i++
