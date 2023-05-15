@@ -1,10 +1,9 @@
 """
+題目網址：https://dmoj.ca/problem/dmopc17c1p1
 給定一張圖，圖上有幾個跟蹤怪Ｘ，並給定幾個saki的位置座標，saki的視野只有上下左右的無限遠，
 詢問當saki在圖上的那些給定做標時，是否會看到跟蹤怪
 
 """
-
-
 
 import sys
 input = sys.stdin.readline
