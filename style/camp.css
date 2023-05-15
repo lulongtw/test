@@ -5,12 +5,13 @@ a{
 .title{
     font-size:25px;
     font-weight:bold;
-    background-color:rgb(211, 170, 5);
+    background-color:#955a1f;
     text-align:center;
+    color:rgba(255, 255, 255, 0.902);
 }
 
 .background{
-    background-color:rgb(248, 225, 169);
+    background-color:#d7b382;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
@@ -20,10 +21,10 @@ a{
     border-radius:5px;
     font-size:20px;
     padding:13px;
-    background-color:rgb(188, 150, 0);
+    background-color:#b47c45;
     width:600px;
     margin-top:15px;
-    color:bisque;
+    color:rgba(255, 255, 255, 0.902);
     text-align:center;
     
    
@@ -31,9 +32,17 @@ a{
 
 .content{
     font-size:15px;
-    color:black;
+    color:#ead9ce;
     text-align:left;
     line-height: 25px;
+}
+
+.content1{
+    font-size:15px;
+    color:#ead9ce;
+    text-align:left;
+    line-height: 25px;
+    text-align:center
     
 }
 .butna{
@@ -41,7 +50,7 @@ a{
     margin-top:5px;
     text-align:center;
     font-size:15px;
-    background-color:darkolivegreen;
+    background-color:rgb(191, 172, 126);
     padding:3px;
     border-radius:10px;
     width:60px;
@@ -53,7 +62,7 @@ a{
     margin-top:5px;
     text-align:center;
     font-size:15px;
-    background-color:darkolivegreen;
+    background-color:rgb(191, 172, 126);
     padding:3px;
     border-radius:10px;
     width:60px;
@@ -67,7 +76,7 @@ a{
     padding:3px;
     border-radius:10px;
     width:60px;
-    background-color:rgb(135, 171, 74);
+    background-color:rgb(210, 207, 189);
     cursor:pointer;
 }
 
@@ -76,7 +85,7 @@ a{
     margin-top:5px;
     text-align:center;
     font-size:15px;
-    background-color:darkolivegreen;
+    background-color:rgb(191, 172, 126);
     padding:3px;
     border-radius:10px;
     width:60px;
@@ -85,7 +94,7 @@ a{
 }
 @media(min-width:1200px){
     .background{
-        background-color:rgb(248, 225, 169);
+        background-color:#d7b382;
         display:block;
         flex-wrap:none;
         justify-content:center;
