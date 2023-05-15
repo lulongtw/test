@@ -36,6 +36,18 @@ a{
     line-height: 25px;
     
 }
+.butna{
+    margin-right:10px;
+    margin-top:5px;
+    text-align:center;
+    font-size:15px;
+    background-color:darkolivegreen;
+    padding:3px;
+    border-radius:10px;
+    width:60px;
+
+}
+
 
 .butn{
     margin-top:5px;
@@ -44,28 +56,30 @@ a{
     background-color:darkolivegreen;
     padding:3px;
     border-radius:10px;
-    width:50px;
+    width:60px;
 }
 
 .msover{
+    margin-right:10px;
     margin-top:5px;
     text-align:center;
     font-size:15px;
     padding:3px;
     border-radius:10px;
-    width:50px;
+    width:60px;
     background-color:rgb(135, 171, 74);
     cursor:pointer;
 }
 
 .msout{
+    margin-right:10px;
     margin-top:5px;
     text-align:center;
     font-size:15px;
     background-color:darkolivegreen;
     padding:3px;
     border-radius:10px;
-    width:50px;
+    width:60px;
     
 
 }
